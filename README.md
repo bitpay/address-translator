@@ -15,21 +15,21 @@ Go to /copay-recovery/node_modules/@angular/cli/models/webpack-configs/common.js
 
 And replace this node definition:
 ```
-Node: {
-         Fs: 'empty',
-         Global: true,
-         Crypto: true,
-         Tls: 'empty',
-         Net: 'empty'
-         Process: true,
-         Module: false,
-         ClearImmediate: false,
-         SetImmediate: false
-       }
+node: {
+    fs: 'empty',
+    global: true,
+    crypto: true,
+    tls: 'empty',
+    net: 'empty',
+    process: true,
+    module: false,
+    clearImmediate: false,
+    setImmediate: false
+}
 ```
 
 Specifically:
-Crypto: 'empty' for crypto: true,
+crypto: 'empty' for crypto: true,
 
 You can see the original discussion about this here: https://github.com/angular/angular-cli/issues/1548
 
