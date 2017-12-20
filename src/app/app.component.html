@@ -31,13 +31,6 @@
               <input type="text" class="form-control" id="addressToTranslate" name="addressToTranslate" [(ngModel)]="addressToTranslate" (ngModelChange)="translateAddress(addressToTranslate)">
             </div>
           </div>
-
-          <div class="form-group col-sm-4" *ngIf="result" [hidden]="true">
-            <div class="input-group">
-              <div class="input-group-addon">Coin:</div>
-              <input type="text" class="form-control" id="origCoin" name="origCoin" [(ngModel)]="result.origCoin" [disabled]="true">
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -49,7 +42,7 @@
           <div class="form-group col">
             <div class="input-group">
               <div class="input-group-addon">Address:</div>
-              <input type="text" class="form-control" id="resultAddress" [disabled]="true" name="resultAddress" [(ngModel)]="result.resultAddress" style="cursor: initial">
+              <input type="text" class="form-control" id="resultAddress" readonly="readonly" name="resultAddress" [(ngModel)]="result.resultAddress" style="cursor: initial">
             </div>
           </div>
         </div>
