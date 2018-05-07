@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div *ngIf="cashAddr && cashAddrUpperCase" class="qrcode">
+        <div *ngIf="cashAddr" class="qrcode">
           <ngx-qrcode qrc-value="{{cashAddr}}" qrc-errorCorrectionLevel="M">
           </ngx-qrcode>
         </div>
